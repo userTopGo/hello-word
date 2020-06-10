@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	var userAnswer = prompt("Что можно увидеть с закрытыми глазами?");
+	var score = 0;
+	userAnswer = userAnswer.toLowerCase();
+	if(userAnswer == "сон" || userAnswer == "сновидение"){
+		alert("Это правильный ответ");
+		score++;
+	}
+	else
+		alert("Вы не угадали");
+
+	userAnswer = prompt("Какой болезнью никто не болеет на суше?");
+	userAnswer = userAnswer.toLowerCase();
+	if(userAnswer == "морской"){
+		alert("Это правильный ответ");
+		score++;
+	}
+	else
+		alert("Вы не угадали");
+
+	userAnswer = prompt("Какой конь не ест овса?");
+	userAnswer = userAnswer.toLowerCase();
+	if(userAnswer == "шахматный"){
+		alert("Это правильный ответ");
+		score++;
+	}
+	else
+		alert("Вы не угадали");
+
+	alert("Вы угадали " + score + " загадок");
+
+
+</script>

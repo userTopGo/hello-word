@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	function askQuestuion(question, answer){
+		var userAnswer = prompt(question);
+		userAnswer = userAnswer.toLowerCase();
+		if(userAnswer == answer){
+			alert("Это правильный ответ");
+			score++
+		}
+		else
+			alert("Вы не угадали");
+	}
+
+	var score = 0;
+
+	askQuestuion("Что можно увидеть с закрытыми глазами?", ["сон", "сновидение"]);
+	askQuestuion("Какой болезнью никто не болеет на суше?", ["морской", "укус акулой"]);
+	askQuestuion("Какой конь не ест овса?", ["шахматный", "мертвый"])
+
+
+	alert("Вы угадали " + score + " загадок");
+
+
+</script>

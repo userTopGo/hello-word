@@ -1,0 +1,54 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	function getAscSequence(n){
+		var array = [];
+		for(var i = 1; i < n; i++){
+			array.push(i);
+		}
+		return array;
+	}
+
+	function sum(array){
+		var sum = 0;
+		for(var i = 0; i < array.length; i++){
+			sum += array[i];
+		}
+		return sum;
+	}
+
+	function max(array){
+		var max = array[0];
+		for(var i = 1; i < array.length; i++){
+			max = array[i];
+		}
+		return max;
+	}
+
+	function min(array){
+		var min = array[0];
+		for(var i = 1; i < array.length; i++){
+			if(array[i] < min)
+				min = array[i];
+		}
+		return min;
+	}
+
+	function getEvenNumbers(array){
+		var even = [];
+		for(var i = 0; i < array.length; i++){
+			if(array[i] % 2 == 0)
+				even.push(array[i]);
+		}
+		return even;
+	}
+
+	var array = getAscSequence(5);
+	alert(array);
+	alert(sum(array));
+	alert(max(array));
+	alert(min(array));
+	alert(getEvenNumbers(array));
+
+
+</script>

@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+var countAnswer = 0;
+var countNotAnswer = 0;
+
+alert('Сколько ножек у сороконожки?')
+var userAnswerOne = prompt('Введите ответ на первую загадку.', '');
+if (userAnswerOne == 40 || userAnswerOne == "40" || userAnswerOne == "Сорок" || userAnswerOne == 'сорок') {
+    alert('Правильно у сороконожки ' + userAnswerOne + ' ножек');
+    countAnswer++;
+} else {
+    alert('Вы ошиблись, правильный ответ 40.');
+    countNotAnswer++;
+
+}
+
+alert('Висит груша, нельзя скушать. Что это?');
+var userAnswerTwo = prompt('Введите ответ на вторую загадку', '');
+if (userAnswerTwo == 'лампочка' || userAnswerTwo == 'Лампочка') {
+    alert('Правильно это - ' + userAnswerTwo);
+    countAnswer++
+} else {
+    alert('Вы ошиблись, правильный ответ лампочка');
+    countNotAnswer++;
+}
+
+alert('Кто его раздевает, тот слезы проливает?');
+var userAnswerThree = prompt('Введите ответ на третью загадку', '');
+if (userAnswerThree == 'лук' || userAnswerThree == 'Лук' || userAnswerThree == 'ЛУК') {
+    alert('Правильно это - ' + userAnswerThree);
+    countAnswer++;
+} else {
+    alert('Вы ошиблись, правильный ответ лук.');
+    countNotAnswer++;
+}
+
+alert('Правильных ответов ' + countAnswer + '. А не правильных ответов ' + countNotAnswer);
+
+</script>
